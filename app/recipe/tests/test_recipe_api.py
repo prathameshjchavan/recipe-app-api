@@ -94,7 +94,7 @@ class PrivateRecipeAPITests(TestCase):
 
     def test_get_recipe_detail(self):
         """Test get recipe detail."""
-        receipe = create_recipe(user=self.user)
+        recipe = create_recipe(user=self.user)
 
         url = detail_url(recipe.id)
         res = self.client.get(url)
