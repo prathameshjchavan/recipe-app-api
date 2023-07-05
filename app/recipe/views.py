@@ -55,6 +55,7 @@ class TagViewSet(mixins.DestroyModelMixin,
 
 
 class IngredientViewSet(
+        mixins.DestroyModelMixin,
         mixins.UpdateModelMixin,
         mixins.ListModelMixin,
         viewsets.GenericViewSet
